@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "het msg el commit";
+read msg;
+
+git add .;
+
+echo "commiting...";
+echo " ";
+git commit -m "${msg}";
+
+echo "pulling...";
+echo " ";
+git pull ;
+
+echo "pushing...";
+echo " ";
+git push;
+
