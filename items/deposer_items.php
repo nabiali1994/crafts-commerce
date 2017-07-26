@@ -42,7 +42,7 @@ echo $db->error;
     die("mwaher frere");
   }
 
-  require 'PHPMailer/PHPMailerAutoload.php';
+  require 'Mailer/PHPMailerAutoload.php';
    $message = file_get_contents('beefree.html');
    $message = str_replace("{{name}}", $name, $message);
    $message = str_replace("{{titre}}", $titre, $message);
